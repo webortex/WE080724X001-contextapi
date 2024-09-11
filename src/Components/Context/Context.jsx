@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+const image1 = import.meta.glob("./src/assets/ScrollingCompo/1.svg",{ eager: true });
+
 
 const Context = React.createContext();
 
@@ -28,7 +30,7 @@ export class Provider extends Component {
     scrollingComponents: [
       {
         id: 1,
-        src: "src/assets/ScrollingCompo/1.svg",
+        src: {image1},
       },
       {
         id: 2,
